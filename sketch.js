@@ -42,9 +42,24 @@ const PROMPT_TIME = 4000;
 const RESULT_TIME = 2500;
 
 const prompts = [
-  { text: "Raise your left hand", action: "leftHandUp" },
-  { text: "Raise your right hand", action: "rightHandUp" },
-  { text: "Raise both hands", action: "bothHandsUp" },
+  {
+    text: "Simon says raise your left hand",
+    action: "leftHandUp",
+    simonSays: true,
+  },
+  {
+    text: "Simon says raise your right hand",
+    action: "rightHandUp",
+    simonSays: true,
+  },
+  {
+    text: "Simon says raise both hands",
+    action: "bothHandsUp",
+    simonSays: true,
+  },
+  { text: "Raise your left hand", action: "leftHandUp", simonSays: false },
+  { text: "Raise your right hand", action: "rightHandUp", simonSays: false },
+  { text: "Raise both hands", action: "bothHandsUp", simonSays: false },
 ];
 
 function preload() {
